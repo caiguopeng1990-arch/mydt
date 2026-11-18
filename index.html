@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -12,7 +11,6 @@
             box-sizing: border-box;
         }
         body {
-            /* 调整点：减弱了黑色渐变遮罩，让背景图更加清晰显露 */
             background: radial-gradient(circle at center, rgba(10, 10, 20, 0.2) 0%, rgba(5, 5, 8, 0.4) 100%), 
                         url('images21.jpg'); 
             background-size: cover;
@@ -20,7 +18,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             
-            /* 调整点：降低了模糊度和亮度压制，让背景图更通透、更清晰 */
             backdrop-filter: brightness(0.7) blur(2px); 
             -webkit-backdrop-filter: brightness(0.7) blur(2px);
             color: #e0e0e0;
@@ -42,12 +39,12 @@
         .header-title {
             font-size: 1.4rem;
             letter-spacing: 3px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             color: #fff;
             text-shadow: 0 0 10px rgba(255, 0, 127, 0.8), 0 0 20px rgba(255, 0, 127, 0.6);
             text-transform: uppercase;
             pointer-events: none;
-            margin-top: 60px;
+            margin-top: 40px;
         }
         .container {
             width: 100%;
@@ -56,16 +53,15 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            padding-bottom: 40px;
+            gap: 15px;
+            padding-bottom: 30px;
         }
-        /* 单个导航位卡片 */
+        /* 单个导航位卡片：保持紧凑和放大标题 */
         .nav-card {
-            /* 调整点：稍微增加卡片背景的暗色半透明度，保证在亮背景下文字依然清晰可读 */
             background: rgba(15, 15, 25, 0.45); 
             border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 20px;
-            padding: 25px 20px;
+            border-radius: 16px;
+            padding: 12px 16px;
             text-decoration: none;
             color: inherit;
             position: relative;
@@ -78,32 +74,32 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-            height: 140px;
+            height: 95px;
         }
         /* 卡片内部图标/序号 */
         .card-icon {
-            font-size: 2rem;
-            margin-bottom: 8px;
+            font-size: 1.3rem;
+            margin-bottom: 2px;
             display: block;
             filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
             transition: transform 0.3s ease;
         }
         .nav-card h2 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
+            font-size: 1.35rem;
+            margin-bottom: 3px;
             letter-spacing: 1px;
             color: #fff;
-            font-weight: 600;
+            font-weight: 700;
         }
         .nav-card p {
-            font-size: 0.8rem;
-            color: #d0d0e0; /* 调亮了副标题文字颜色，适应更清晰的背景 */
+            font-size: 0.75rem;
+            color: #d0d0e0;
             transition: color 0.3s ease;
-            line-height: 1.4;
+            line-height: 1.3;
         }
         /* 悬停时的霓虹爆发效果 */
         .nav-card:hover {
-            transform: translateY(-5px) scale(1.02);
+            transform: translateY(-3px) scale(1.02);
             border-color: rgba(255, 0, 127, 0.7);
             box-shadow: 0 10px 30px -10px rgba(255, 0, 127, 0.6),
                         inset 0 0 20px rgba(255, 0, 127, 0.15);
@@ -117,9 +113,9 @@
         }
         /* 底部安全小标语 */
         .footer-tip {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 0.6rem;
-            color: #8a8a9e; /* 调亮底部提示文字 */
+            color: #8a8a9e;
             letter-spacing: 1px;
             text-transform: uppercase;
             pointer-events: none;
@@ -131,7 +127,7 @@
                 padding-bottom: env(safe-area-inset-bottom);
             }
             .header-title {
-                margin-top: calc(60px + env(safe-area-inset-top));
+                margin-top: calc(40px + env(safe-area-inset-top));
             }
         }
     </style>
@@ -143,26 +139,44 @@
         <a href="http://wv34.cc" target="_blank" class="nav-card">
             <span class="card-icon">①</span>
             <h2>免费看片</h2>
-            <p>免费片源<br></p>
+            <p>免费片源</p>
         </a>
         <a href="http://se678.top" target="_blank" class="nav-card">
             <span class="card-icon">②</span>
             <h2>太子传媒</h2>
-            <p>人兽 幼女 偷拍<br></p>
+            <p>人兽 幼女 偷拍</p>
         </a>
         <a href="http://www.vavc.cc" target="_blank" class="nav-card">
             <span class="card-icon">③</span>
             <h2>萝莉视频</h2>
-            <p>偷拍自拍 欧美 日韩精品<br></p>
+            <p>偷拍自拍 欧美 日韩精品</p>
         </a>
         <a href="https://828.cx" target="_blank" class="nav-card">
             <span class="card-icon">④</span>
             <h2>点击更多资源</h2>
-            <p>更多资源集合<br>尊享特权访问</p>
+            <p>更多资源集合 · 尊享特权访问</p>
         </a>
     </div>
+    
     <div class="footer-tip">
         Encrypted Connection · Secured by Obscura Protocol
     </div>
+
+    <!-- Default Statcounter code for wv25 http://wv25.cc -->
+    <script type="text/javascript">
+    var sc_project=13367825; 
+    var sc_invisible=1; 
+    var sc_security="10178664"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/13367825/0/10178664/1/"
+    alt="Web Analytics"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->
 </body>
 </html>
